@@ -4,12 +4,15 @@
   "private": true,
   "homepage": "https://alex7kom.github.io/nanoid-cc",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "nanoid": "^1.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
