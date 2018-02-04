@@ -1,0 +1,9 @@
+.Result {
+  padding: 15px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.Result strong {
+  font-size: 34px;
+}

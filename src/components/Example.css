@@ -1,0 +1,11 @@
+.Example {
+  margin-top: 30px;
+}
+
+.Example-code {
+  background-color: #eeeeee;
+  display: block;
+  overflow-x: scroll;
+  width: 100%;
+  padding-left: 15px;
+}
