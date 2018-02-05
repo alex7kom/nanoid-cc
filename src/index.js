@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'nervjs';
+import ReactDOM from 'nervjs';
 import './normalize.css';
 
 import App from './App';

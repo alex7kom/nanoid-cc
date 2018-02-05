@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'nervjs';
 import formatDuration from '../util/duration';
 
 import './Result.css';

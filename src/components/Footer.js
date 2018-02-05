@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'nervjs';
 import './Footer.css';
 
 class Footer extends Component {

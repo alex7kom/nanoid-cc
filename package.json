@@ -6,8 +6,7 @@
   "dependencies": {
     "gh-pages": "^1.1.0",
     "nanoid": "^1.0.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "nervjs": "^1.2.10",
     "react-scripts": "1.1.0"
   },
   "scripts": {

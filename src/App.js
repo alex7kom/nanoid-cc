@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'nervjs';
 
 import Form from './components/Form';
 import Result from './components/Result';

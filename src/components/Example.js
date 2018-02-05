@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'nervjs';
 import generateExample from '../util/nanoid-example';
 import './Example.css';
 
