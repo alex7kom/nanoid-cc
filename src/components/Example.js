@@ -14,9 +14,11 @@ class Example extends Component {
     return (
       <div className="Example">
         <h3>Example of this usage</h3>
-        <code className="Example-code"><pre>
-          {generateExample(this.props.state)}
-        </pre></code>
+        <code className="Example-code"
+          dangerouslySetInnerHTML={{
+            __html: generateExample(this.props.state)
+          }}>
+        </code>
       </div>
     );
   }

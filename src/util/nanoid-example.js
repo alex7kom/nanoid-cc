@@ -33,15 +33,23 @@ export default function (state) {
   const exampleId = format(random, state.alphabet, state.size);
 
   if (state.alphabet === defaultAlphabet) {
-    requireExample = `var nanoid = require('nanoid');
-
+    requireExample = `var nanoid = require('nanoid');<br />
+<br />
 model.id = nanoid(${lengthExample}); // => "${exampleId}"`;
   } else {
-    requireExample = `var generate = require('nanoid/generate');
-var alphabet = '${state.alphabet}';
-
+    requireExample = `var generate = require('nanoid/generate');<br />
+var alphabet = '${state.alphabet}';<br />
+<br />
 model.id = generate(alphabet, ${state.size}); // => "${exampleId}`;
   }
+
+  requireExample = requireExample
+    .replace(/ = /g, ' <span class="hl-op">=</span> ')
+    .replace(/\b(\S+?)\(/g, '<span class="hl-func">$1</span>(')
+    .replace(/(\/\/.+?)$/gm, '<span class="hl-comment">$1</span>')
+    .replace(/\b(var)\b/g, '<span class="hl-keyword">$1</span>')
+    .replace(/('.+?')/g, '<span class="hl-str">$1</span>')
+    .replace(/\b(\d+)\b/g, '<span class="hl-num">$1</span>');
 
   return requireExample;
 }

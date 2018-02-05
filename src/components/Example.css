@@ -3,9 +3,34 @@
 }
 
 .Example-code {
-  background-color: #eeeeee;
+  background-color: #fdf6e3;
   display: block;
   overflow-x: scroll;
   width: 100%;
-  padding-left: 15px;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.hl-op {
+  color: #859900;
+}
+
+.hl-func {
+  color: #268bd2;
+}
+
+.hl-comment {
+  color: #93a1a1;
+}
+
+.hl-keyword {
+  font-weight: bold;
+}
+
+.hl-str {
+  color: #2aa198;
+}
+
+.hl-num {
+  color: #d33682;
 }
